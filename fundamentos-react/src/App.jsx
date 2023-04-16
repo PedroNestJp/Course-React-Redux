@@ -12,22 +12,22 @@ export default function App(props) {
     <div className="App">
       <h1>Fundamentos React</h1>
       <div className="Cards">
-        <Card titulo="Components With Children" color="#f0f">
+        <Card titulo="#4 Components With Children" color="#f0f">
           <Family lastName="Pontes">
             <FamilyMenber name="Pedro" lastName="Silva" />
             <FamilyMenber name="Miguel" lastName={props.lastName} />
             <FamilyMenber name="Gabriel" />
           </Family>
         </Card>
-        <Card titulo="Randon Number" color="#f00">
+        <Card titulo="#3 Randon Number" color="#f00">
           <Randon min={1} max={60} />
         </Card>
-        <Card titulo="First Component" color="#0f0">
-          <FirstComp />
-        </Card>
-        <Card titulo="With Params" color="#00f">
+        <Card titulo="#2 With Params" color="#00f">
           <WithParams aluno="Pedro" nota={7.0} />
           <WithParams aluno="Silva" nota={9.5} />
+        </Card>
+        <Card titulo=" #1 First Component" color="#0f0">
+          <FirstComp />
         </Card>
       </div>
     </div>

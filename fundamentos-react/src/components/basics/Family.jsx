@@ -4,7 +4,7 @@ import React, { cloneElement } from "react";
 export default (props) => {
   return (
     <div>
-      {React.Children.map(props.children, (props.children, (el) =>{
+      {React.Children.map(props.children, (props.children, (child) =>{
         // eslint-disable-next-line no-undef
         return cloneElement(child, props)
       }))}
